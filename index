@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Cole Peterson">
+        <title> Form Activity Solution File</title>
+        <link rel="stylesheet" href="style (2).css">
+    </head>
+    <body>
+        <a href="#main-content" id="skipLink"> Skip to main content</a>
+        <header>
+            <h1> Form Activity- GIT414</h1>
+            <nav>
+                <h2 class="sr-only"> Site Navigation</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="maincontent">
+            <article>
+                <h2>Coding Semantic and Accessible Forms</h2>
+                <p>
+                    Complete the form below. Fields marked with<span class="required" aria-hidden="true">*</span> are required.
+                </p>
+                <form action="https://wp.zybooks.com/form-viewer.php" method="post">
+                    <!-- Name -->
+                    <label for="first_name">First Name <span class="required" aria-hidden="true">*</span></label>
+                    <input type="text" id="first_name" name="first_name" autocomplete="given-name" required>
+            
+                    <label for="last_name">Last Name <span class="required" aria-hidden="true">*</span></label>
+                    <input type="text" id="last_name" name="last_name" autocomplete="family-name" required>
+            
+                    <!-- Email -->
+                    <label for="email">Email Address <span class="required" aria-hidden="true">*</span></label>
+                    <input type="email" id="email" name="email" autocomplete="email" required>
+            
+                    <!-- Phone -->
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="123-456-7890" pattern="^(\+?1[-.\s]?)?(\(?\d{3}\)?)[-.\s]?\d{3}[-.\s]?\d{4}$"
+                    aria-describedby="phoneHelp">
+                    <small id="phoneHelp"> Examples: 480-555-5555 or (480) 555-5555</small>
+                    <fieldset>
+                        <legend>
+                            Preferred Method of Contact<span class="required" aria-hidden="true">*</span>
+                        </legend>
+                        <input type="radio" id="pref_email" name="preferred_contact" vale="email">
+                        <label for="pref_email">Email</label>
+                        <input type="radio" id="pref_phone" name="preferred_contact" vale="phone">
+                        <label for="pref_phone">Phone</label>
+                    </fieldset>
+                    <label for="state">State of Residence<span class="required" aria-hidden="true">*</span></label>
+                    <select id="state" name="state" required>
+                        <option>Alabama</option>
+                        <option>Alaska</option>
+                        <option>Arizona</option>
+                        <option>Arkansas</option>
+                        <option>California</option>
+                        <option>Colorado</option>
+                        <option>Connecticut</option>
+                        <option>Delaware</option>
+                        <option>Florida</option>
+                        <option>Georgia</option>
+                        <option>Hawaii</option>
+                        <option>Idaho</option>
+                        <option>Illinois</option>
+                        <option>Indiana</option>
+                        <option>Iowa</option>
+                        <option>Kansas</option>
+                        <option>Kentucky</option>
+                        <option>Louisiana</option>
+                        <option>Maine</option>
+                        <option>Maryland</option>
+                        <option>Massachusetts</option>
+                        <option>Michigan</option>
+                        <option>Minnesota</option>
+                        <option>Mississippi</option>
+                        <option>Missouri</option>
+                        <option>Montana</option>
+                        <option>Nebraska</option>
+                        <option>Nevada</option>
+                        <option>New Hampshire</option>
+                        <option>New Jersey</option>
+                        <option>New Mexico</option>
+                        <option>New York</option>
+                        <option>North Dakota</option>
+                        <option>Ohio</option>
+                        <option>Oklahoma</option>
+                        <option>Oregon</option>
+                        <option>Pensylvania</option>
+                        <option>Rhode Island</option>
+                        <option>South Carolina</option>
+                        <option>South Dakota</option>
+                        <option>Tennessee</option>
+                        <option>Texas</option>
+                        <option>Utah</option>
+                        <option>Vermont</option>
+                        <option>Virgina</option>
+                        <option>Washington</option>
+                        <option>West Virginia</option>
+                        <option>Wisconsin</option>
+                        <option>Wyoming</option>
+                    </select>
+                    <label for="comments">Comments</label>
+                    <textarea id="comments" name="comments" rows="5" autocomplete="off"></textarea>
+
+                    <input type="submit" value="Submit">
+                    </form>
+
+            </article>
+        </main>
+        <footer>
+            <p>&copy; 2025- GIT414</p>
+        </footer>
+    </body>
+</html>
